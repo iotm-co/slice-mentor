@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- css swiperjs -->
+    <link rel="stylesheet" href="./public/css/swiper-bundle.min.css" />
+    <!-- css native -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="icon" href="./public/images/logo.svg" />
+    <title>ioTm Mentor</title>
+  </head>
+  <body class="bg-slate-50 font-sans">
+    <!-- header -->
+    <header
+      id="header"
+      class="fixed z-[999] w-full bg-transparent py-2 transition-all duration-200 ease-in-out md:py-5 lg:py-5"
+    >
+      <div class="container mx-auto">
+        <div class="navbar">
+          <div class="logo cursor-pointer">
+            <i class="bx bx-cube-alt icon text-3xl text-dark-scy"></i>
+          </div>
+          <nav id="navigation" class="navigation" data-visible="false">
+            <ul class="menu">
+              <li>
+                <a class="nav-link" href="./public/challenges.html"
+                  >Challenges</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="./public/resources.html">Resources</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./public/teams.html">Teams</a>
+              </li>
+              <li class="relative max-w-max">
+                <div
+                  class="badge absolute -top-3 -right-5 rounded-full bg-primary px-3 py-[.15rem] text-center text-[10px] font-medium uppercase text-white"
+                >
+                  PRO
+                </div>
+                <a class="nav-link" href="./public/unlock.html">Unlock</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./public/templates.html"
+                  >Free Templates</a
+                >
+              </li>
+              <a
+                href="./public/login.html"
+                type="submit"
+                class="btn-navigation text-center lg:px-8"
+              >
+                Login
+              </a>
+            </ul>
+          </nav>
+          <div
+            class="menu-hamburger cursor-pointer md:hidden"
+            aria-expanded="false"
+            aria-controls="navigation"
+          >
+            <i class="bx bx-menu-alt-right icon text-3xl text-dark"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- content -->
+    <section class="content py-20 lg:py-28">
+      <div class="container mx-auto">
+        <div
+          class="rows-content flex flex-wrap gap-y-8 md:justify-between lg:items-center"
+        >
+          <div
+            class="cols-content relative flex justify-center lg:basis-1/2 lg:justify-end"
+          >
+            <img
+              class="hero-images w-3/4 drop-shadow-2xl md:w-3/5 lg:w-[80%]"
+              src="./public/images/hero-img.png"
+              alt="hero images"
+            />
+            <div
+              class="content-slide-autoplay absolute top-2/3 right-1/2 max-w-xs translate-x-1/2 overflow-hidden rounded-lg shadow-3xl lg:translate-x-2/3"
+            >
+              <div class="rows-slide-autoplay">
+                <div class="swiper slide-autoplay">
+                  <div class="swiper-wrapper">
+                    <div
+                      class="swiper-slide card flex flex-nowrap items-start gap-x-3 bg-slate-50 p-5 text-center"
+                    >
+                      <div class="card-images basis-1/2">
+                        <img
+                          class="rounded-full shadow-xl"
+                          src="./public/images/user-testimonial-1.jpg"
+                          alt="user testimonial"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p
+                          class="testimonial text-left text-[.7rem] font-bold text-dark"
+                        >
+                          Website ini sangat membantu saya melatih keterampilan
+                          pembuatan layouting pada kasus Flex box dan Grid.
+                        </p>
+                        <p
+                          class="dev mt-2 text-left font-serif text-[.6rem] font-semibold tracking-wider text-gray-400"
+                        >
+                          John BBC - CEO @space.id
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide card flex flex-nowrap items-start gap-x-3 bg-slate-50 p-5 text-center"
+                    >
+                      <div
+                        class="card-images basis-1/2 overflow-hidden rounded-full bg-gray-300"
+                      >
+                        <img
+                          class="shadow-xl"
+                          src="./public/images/team-1.png"
+                          alt="user testimonial"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p
+                          class="testimonial text-left text-[.7rem] font-bold text-dark"
+                        >
+                          Website ini sangat membantu saya dalam mempelajari
+                          studi kasus baru pada bagian Mobile First.
+                        </p>
+                        <p
+                          class="dev mt-2 text-left font-serif text-[.6rem] font-semibold tracking-wider text-gray-400"
+                        >
+                          M Syaiful Rizal - CEO @ioTm.id
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide card flex flex-nowrap items-start gap-x-3 bg-slate-50 p-5 text-center"
+                    >
+                      <div class="card-images basis-1/2">
+                        <img
+                          class="rounded-full shadow-xl"
+                          src="./public/images/user-testimonial-2.jpg"
+                          alt="user testimonial"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p
+                          class="testimonial text-left text-[.7rem] font-bold text-dark"
+                        >
+                          Website ini sangat membantu saya dalam menentukan
+                          typography dan menyediakan Asset secara gratis.
+                        </p>
+                        <p
+                          class="dev mt-2 text-left font-serif text-[.6rem] font-semibold tracking-wider text-gray-400"
+                        >
+                          Robert FOX - CEO @jfestudio.com
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cols-content lg:order-first lg:basis-1/2">
+            <h1
+              class="title-content px-6 text-center font-serif text-2xl font-[500] text-dark md:text-4xl"
+            >
+              Tingkatkan skill
+              <span class="font-bold text-primary">Front End</span> anda, dengan
+              membuat sebuah <span class="font-bold text-primary">Project</span>
+              nyata
+            </h1>
+            <p class="my-6 px-4 text-center text-sm text-dark">
+              Selesaikan tantangan
+              <span class="font-medium">HTML, CSS </span> dan
+              <span class="font-medium">Javacript</span> dengan design
+              profesional, untuk mengasah skill slicing design kita,
+              bergabunglah dengan kami untuk menyelesaikan suatu project dan
+              saling membantu satu sama lain untuk menjadi lebih baik.
+            </p>
+            <a
+              href="./public/login.html"
+              class="login-with-google mx-auto mt-10 flex w-4/5 cursor-pointer items-center justify-center gap-x-2 rounded-full p-3 shadow-3xl hover:bg-white md:w-1/2"
+            >
+              <img class="w-7" src="./public/images/gmail.svg" alt="gmail" />
+              <p class="text-base font-semibold text-dark lg:text-sm">
+                Sign in with Google
+              </p>
+            </a>
+            <!-- <button
+              class="mx-auto mt-10 flex w-3/4 items-center justify-between rounded-full bg-holy px-8 py-2 font-medium text-dark shadow-3xl hover:bg-white md:w-[45%] lg:w-1/2 lg:text-sm"
+              type="submit"
+            >
+              Login with Google
+              <img class="w-8 lg:w-7" src="./public/images/gmail.svg" alt="" />
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- choose your challenges -->
+    <section class="choose py-16 lg:py-24">
+      <div class="container mx-auto">
+        <div class="rows-choose">
+          <h3
+            class="text-center font-serif text-[1.3rem] font-medium text-dark md:text-2xl"
+          >
+            Tertarik bergabung?
+          </h3>
+          <div class="swiper slider relative mt-4 w-full">
+            <div class="swiper-wrapper py-6 md:py-10">
+              <div
+                class="swiper-slide h-[220px] rounded-lg px-4 py-5 text-center md:max-w-sm md:shadow-3xl lg:max-w-md"
+              >
+                <img
+                  class="mx-auto w-28 drop-shadow-lg lg:w-24"
+                  src="./public/images/img-introduction-2.svg"
+                  alt=""
+                />
+                <h3 class="mt-4 mb-3 text-sm font-medium text-dark">
+                  Choose your challenge
+                </h3>
+                <p class="text-xs text-secondary">
+                  Lihat koleksi desain web kami, Pilih satu yang menurut Anda
+                  akan menjadi tantangan yang bagus untuk Anda pada tahap ini
+                </p>
+              </div>
+              <div
+                class="swiper-slide h-[220px] rounded-lg px-4 py-5 text-center md:max-w-sm md:shadow-3xl lg:max-w-md"
+              >
+                <img
+                  class="mx-auto w-[5.7rem] drop-shadow-lg lg:w-[4.7rem]"
+                  src="./public/images/img-introduction-6.svg"
+                  alt=""
+                />
+                <h3 class="mt-4 mb-3 text-sm font-medium text-dark">
+                  Code the design
+                </h3>
+                <p class="text-xs text-secondary">
+                  Mulai tantangan dan unduh semua file. Kami menyediakan semua
+                  file yang Anda perlukan untuk menyelesaikan tantangan.
+                </p>
+              </div>
+              <div
+                class="swiper-slide h-[220px] rounded-lg px-4 py-5 text-center md:max-w-sm md:shadow-3xl lg:max-w-md"
+              >
+                <img
+                  class="mx-auto w-[6.5rem] drop-shadow-lg"
+                  src="./public/images/img-introduction-4.svg"
+                  alt=""
+                />
+                <h3 class="mt-4 mb-3 text-sm font-medium text-dark">
+                  Submit your solution
+                </h3>
+                <p class="text-xs text-secondary">
+                  Posting solusi Anda di platform agar semua orang dapat melihat
+                  dan mendapatkan umpan balik tentang kode Anda dari pengembang
+                  lain.
+                </p>
+              </div>
+              <div
+                class="swiper-slide h-[220px] rounded-lg px-4 py-5 text-center md:max-w-sm md:shadow-3xl lg:max-w-md"
+              >
+                <img
+                  class="mx-auto w-28 drop-shadow-lg lg:w-24"
+                  src="./public/images/img-introduction-3.svg "
+                  alt=""
+                />
+                <h3 class="mt-4 mb-3 text-sm font-medium text-dark">
+                  Give others feedback
+                </h3>
+                <p class="text-xs text-secondary">
+                  Bantu orang lain sambil memperdalam pengetahuan Anda sendiri
+                  dengan memberikan umpan balik tentang solusi.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination z-20 translate-y-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- latest challenges -->
+    <section class="latest py-16">
+      <div class="container relative mx-auto overflow-hidden rounded-t-3xl">
+        <div
+          class="rounded-blank absolute top-0 left-0 right-0 -z-10 h-80 bg-dark"
+        ></div>
+        <h1
+          class="my-10 text-center font-serif text-2xl font-medium text-slate-50 md:text-[1.6rem] lg:my-16"
+        >
+          Latest Challenges
+        </h1>
+        <div class="rows-latest flex flex-wrap justify-center gap-y-5 md:gap-6">
+          <div class="cols-latest">
+            <div class="card max-w-xs rounded-lg bg-holy p-3 shadow-3xl">
+              <div class="card-images relative">
+                <span
+                  class="sale absolute right-2 top-2 z-10 block rounded-full bg-info py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white"
+                  >Free</span
+                >
+                <a href="./public/challenges-now.html">
+                  <img
+                    class="h-56 rounded-lg object-cover drop-shadow-sm"
+                    src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/qkpgcsmter7tah2sjdij.jpg"
+                    alt="images project"
+                  />
+                </a>
+              </div>
+              <div class="card-body py-3">
+                <a
+                  href="./public/challenges-now.html"
+                  class="mt-1 block font-serif text-lg font-medium"
+                >
+                  Manage Landing Page
+                </a>
+                <div class="info-language my-3 flex justify-between">
+                  <div class="language flex items-center gap-x-3">
+                    <span class="text-base font-medium text-danger">HTML</span>
+                    <span class="text-base font-medium text-info">CSS</span>
+                    <span class="text-base font-medium text-warning">JS</span>
+                  </div>
+                  <div
+                    class="mode flex items-center rounded-sm border border-warning text-slate-50"
+                  >
+                    <span
+                      class="bg-warning px-2 py-[.2rem] text-xs font-semibold text-holy"
+                      >3</span
+                    >
+                    <span class="px-2 text-xs font-bold uppercase text-warning">
+                      Intermediate
+                    </span>
+                  </div>
+                </div>
+                <div class="paragraf-info">
+                  <p class="text-[.8rem] text-secondary">
+                    Proyek galeri seni dua halaman ini akan sempurna jika Anda
+                    siap untuk mengerjakan project bagian ini, Ada beberapa
+                    tantangan tata letak yang sangat menarik!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cols-latest">
+            <div class="card max-w-xs rounded-lg bg-holy p-3 shadow-3xl">
+              <div class="card-images relative">
+                <span
+                  class="sale absolute right-2 top-2 z-10 block rounded-full bg-primary py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white"
+                  >Premium</span
+                >
+                <img
+                  class="h-56 rounded-lg drop-shadow-sm"
+                  src="./public/images/project-2.jpg"
+                  alt="images project"
+                />
+              </div>
+              <div class="card-body py-3">
+                <h3 class="mt-1 font-serif text-lg font-medium">
+                  Cargo Landing Page
+                </h3>
+                <div class="info-language my-3 flex justify-between">
+                  <div class="language flex items-center gap-x-3">
+                    <span class="text-base font-medium text-danger">HTML</span>
+                    <span class="text-base font-medium text-info">CSS</span>
+                    <span class="text-base font-medium text-warning">JS</span>
+                  </div>
+                  <div
+                    class="mode flex items-center rounded-sm border border-warning text-slate-50"
+                  >
+                    <span
+                      class="bg-warning px-2 py-[.2rem] text-xs font-semibold text-holy"
+                      >3</span
+                    >
+                    <span class="px-2 text-xs font-bold uppercase text-warning">
+                      Intermediate
+                    </span>
+                  </div>
+                </div>
+                <div class="paragraf-info">
+                  <p class="text-[.8rem] text-secondary">
+                    Proyek galeri seni dua halaman ini akan sempurna jika Anda
+                    siap untuk mengerjakan project bagian ini, Ada beberapa
+                    tantangan tata letak yang sangat menarik!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cols-latest">
+            <div class="card max-w-xs rounded-lg bg-holy p-3 shadow-3xl">
+              <div class="card-images relative">
+                <span
+                  class="sale absolute right-2 top-2 z-10 block rounded-full bg-primary py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white"
+                  >Premium</span
+                >
+                <img
+                  class="h-56 rounded-lg drop-shadow-sm"
+                  src="./public/images/project-3.jpg"
+                  alt="images project"
+                />
+              </div>
+              <div class="card-body py-3">
+                <h3 class="mt-1 font-serif text-lg font-medium">
+                  Glasses Landing Page
+                </h3>
+                <div class="info-language my-3 flex justify-between">
+                  <div class="language flex items-center gap-x-3">
+                    <span class="text-base font-medium text-danger">HTML</span>
+                    <span class="text-base font-medium text-info">CSS</span>
+                    <span class="text-base font-medium text-warning">JS</span>
+                  </div>
+                  <div
+                    class="mode flex items-center rounded-sm border border-danger text-slate-50"
+                  >
+                    <span
+                      class="bg-danger px-2 py-[.2rem] text-xs font-semibold text-holy"
+                      >4</span
+                    >
+                    <span class="px-2 text-xs font-bold uppercase text-danger">
+                      Advanced
+                    </span>
+                  </div>
+                </div>
+                <div class="paragraf-info">
+                  <p class="text-[.8rem] text-secondary">
+                    Proyek galeri seni dua halaman ini akan sempurna jika Anda
+                    siap untuk mengerjakan project bagian ini, Ada beberapa
+                    tantangan tata letak yang sangat menarik!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cols-latest">
+            <div class="card max-w-xs rounded-lg bg-holy p-3 shadow-3xl">
+              <div class="card-images relative">
+                <span
+                  class="sale absolute right-2 top-2 z-10 block rounded-full bg-primary py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white"
+                  >Premium</span
+                >
+                <img
+                  class="rounded-lg drop-shadow-sm"
+                  src="./public/images/project-4.jpg"
+                  alt="images project"
+                />
+              </div>
+              <div class="card-body py-3">
+                <h3 class="mt-1 font-serif text-lg font-medium">
+                  Landing Page Design
+                </h3>
+                <div class="info-language my-3 flex justify-between">
+                  <div class="language flex items-center gap-x-3">
+                    <span class="text-base font-medium text-danger">HTML</span>
+                    <span class="text-base font-medium text-info">CSS</span>
+                    <span class="text-base font-medium text-warning">JS</span>
+                  </div>
+                  <div
+                    class="mode flex items-center rounded-sm border border-danger text-slate-50"
+                  >
+                    <span
+                      class="bg-danger px-2 py-[.2rem] text-xs font-semibold text-holy"
+                      >4</span
+                    >
+                    <span class="px-2 text-xs font-bold uppercase text-danger">
+                      Advanced
+                    </span>
+                  </div>
+                </div>
+                <div class="paragraf-info">
+                  <p class="text-[.8rem] text-secondary">
+                    Proyek galeri seni dua halaman ini akan sempurna jika Anda
+                    siap untuk mengerjakan project bagian ini, Ada beberapa
+                    tantangan tata letak yang sangat menarik!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cols-latest">
+            <div class="card max-w-xs rounded-lg bg-holy p-3 shadow-3xl">
+              <div class="card-images relative">
+                <span
+                  class="sale absolute right-2 top-2 z-10 block rounded-full bg-primary py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white"
+                  >Premium</span
+                >
+                <img
+                  class="rounded-lg drop-shadow-sm"
+                  src="./public/images/project-5.jpg"
+                  alt="images project"
+                />
+              </div>
+              <div class="card-body py-3">
+                <h3 class="mt-1 font-serif text-lg font-medium">
+                  Freebie : Landing Page
+                </h3>
+                <div class="info-language my-3 flex justify-between">
+                  <div class="language flex items-center gap-x-3">
+                    <span class="text-base font-medium text-danger">HTML</span>
+                    <span class="text-base font-medium text-info">CSS</span>
+                    <span class="text-base font-medium text-warning">JS</span>
+                  </div>
+                  <div
+                    class="mode flex items-center rounded-sm border border-danger text-slate-50"
+                  >
+                    <span
+                      class="bg-danger px-2 py-[.2rem] text-xs font-semibold text-holy"
+                      >4</span
+                    >
+                    <span class="px-2 text-xs font-bold uppercase text-danger">
+                      Advanced
+                    </span>
+                  </div>
+                </div>
+                <div class="paragraf-info">
+                  <p class="text-[.8rem] text-secondary">
+                    Proyek galeri seni dua halaman ini akan sempurna jika Anda
+                    siap untuk mengerjakan project bagian ini, Ada beberapa
+                    tantangan tata letak yang sangat menarik!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cols-latest">
+            <div class="card max-w-xs rounded-lg bg-holy p-3 shadow-3xl">
+              <div class="card-images relative">
+                <span
+                  class="sale absolute right-2 top-2 z-10 block rounded-full bg-info py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white"
+                  >Free</span
+                >
+                <img
+                  class="rounded-lg drop-shadow-sm"
+                  src="./public/images/project-6.jpg"
+                  alt="images project"
+                />
+              </div>
+              <div class="card-body py-3">
+                <h3 class="mt-1 font-serif text-lg font-medium">
+                  Landing Page Header Concept
+                </h3>
+                <div class="info-language my-3 flex justify-between">
+                  <div class="language flex items-center gap-x-3">
+                    <span class="text-base font-medium text-danger">HTML</span>
+                    <span class="text-base font-medium text-info">CSS</span>
+                    <span class="text-base font-medium text-warning">JS</span>
+                  </div>
+                  <div
+                    class="mode flex items-center rounded-sm border border-primary text-slate-50"
+                  >
+                    <span
+                      class="bg-primary px-2 py-[.2rem] text-xs font-semibold text-holy"
+                      >2</span
+                    >
+                    <span class="px-2 text-xs font-bold uppercase text-primary">
+                      Junior
+                    </span>
+                  </div>
+                </div>
+                <div class="paragraf-info">
+                  <p class="text-[.8rem] text-secondary">
+                    Proyek galeri seni dua halaman ini akan sempurna jika Anda
+                    siap untuk mengerjakan project bagian ini, Ada beberapa
+                    tantangan tata letak yang sangat menarik!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="mx-auto mt-8 block max-w-max text-center text-sm text-dark underline hover:no-underline md:mt-12"
+          href="./public/challenges.html"
+          >Lihat semua Challenges</a
+        >
+      </div>
+    </section>
+    <!-- join community -->
+    <section class="community lg:py-10">
+      <div
+        class="container mx-auto overflow-hidden rounded-3xl bg-dark-scy py-20 lg:py-28"
+      >
+        <div class="rows-community">
+          <div class="cols-community text-center">
+            <div
+              class="logo-brand flex items-center justify-center gap-x-2 text-holy"
+            >
+              <i class="bx bx-code icon text-4xl"></i>
+              <h1 class="title font-serif text-2xl font-bold lg:text-3xl">
+                Jfe Studio
+              </h1>
+            </div>
+            <p class="my-6 text-sm font-bold text-holy">
+              JOIN OUR JFESTUDIO COMMUNITY
+            </p>
+            <p
+              class="text-center text-sm font-medium text-holy lg:mx-auto lg:max-w-md"
+            >
+              Bergabunglah dengan lebih dari 2.570 orang yang mengambil
+              tantangan, saling mengoreksi satu sama lain, saling membantu, dan
+              membahas tentang semuanya!
+            </p>
+            <form
+              class="mt-8 flex flex-wrap gap-x-4 gap-y-2 md:flex-row md:justify-center"
+            >
+              <input
+                class="w-full rounded-md border border-graysly bg-transparent py-[0.6rem] px-4 text-holy md:basis-2/4 lg:basis-1/3"
+                type="email"
+                name="email"
+                placeholder="iotm@gmail.com"
+              />
+              <button
+                type="button"
+                class="w-full rounded-md bg-holy py-[0.7rem] text-sm font-medium uppercase italic text-dark hover:bg-slate-50 md:max-w-max md:px-6 lg:text-xs"
+              >
+                Request Invite
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- newsletter -->
+    <section class="newsletter py-20 lg:py-32">
+      <div class="container mx-auto">
+        <div
+          class="rows-newsletter flex flex-wrap gap-y-10 md:flex-nowrap md:items-center md:gap-x-20"
+        >
+          <div class="cols-newsletter md:basis-3/6">
+            <p class="text-base font-bold text-dark">
+              SUBSCRIBE TO OUR NEWSLETTER
+            </p>
+            <p class="mt-3 mb-4 text-sm font-medium text-dark">
+              Jangan lupa selalu baca-baca berita dari kami yang terbaru,
+              tantangan baru, solusi unggulan, dan berita terbaru ioTm Mentor
+            </p>
+            <div class="input-checkbox flex max-w-max items-center gap-x-2">
+              <input type="checkbox" name="chk" id="chk" />
+              <label
+                for="chk"
+                class="cursor-pointer text-sm font-medium text-dark"
+              >
+                I am happy for ioTm to contact me by email
+              </label>
+            </div>
+            <form class="mt-5 flex flex-wrap gap-y-2 lg:gap-x-4">
+              <input
+                class="w-full rounded-md border border-graysly bg-transparent py-[0.6rem] px-4 text-holy lg:w-7/12"
+                type="email"
+                name="email"
+                placeholder="iotm@gmail.com"
+              />
+              <button
+                type="button"
+                class="w-full rounded-md bg-primary py-[0.7rem] text-sm font-medium uppercase italic text-holy hover:bg-blue-600 lg:w-1/4"
+              >
+                SUBSCRIBE
+              </button>
+            </form>
+          </div>
+          <div class="cols-newsletter order-first md:order-none md:basis-3/6">
+            <img
+              class="hero drop-shadow-lg"
+              src="./public/images/collabs.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="relative bg-dark-scy py-20 lg:py-28">
+      <div class="container mx-auto">
+        <div class="rows-footer flex flex-wrap gap-y-14 lg:justify-between">
+          <div class="cols-footer basis-4/5 lg:basis-1/3">
+            <h3 class="font-serif text-white">ioTm Mentor</h3>
+            <p class="mt-2 text-sm text-slate-300 lg:text-xs">
+              Gain real experience of building websites and providing code
+              reviews. Build your portfolio and help others achieve their goals.
+            </p>
+          </div>
+          <div class="cols-footer basis-2/5 md:basis-1/4 lg:basis-0">
+            <h3 class="text-md mb-2 font-medium text-holy lg:text-sm">
+              Explore
+            </h3>
+            <ul class="flex flex-col gap-y-1 lg:gap-y-2">
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Challenges
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Solution
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Resources
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Unlock PRO
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Free Templates
+              </li>
+            </ul>
+          </div>
+          <div class="cols-footer basis-2/5 md:basis-1/4 lg:basis-0">
+            <h3 class="text-md mb-2 font-medium text-holy lg:text-sm">
+              Community
+            </h3>
+            <ul class="flex flex-col gap-y-1 lg:gap-y-2">
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Contact Us
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                JfeStudio
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                FAQs
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Blog
+              </li>
+            </ul>
+          </div>
+          <div class="cols-footer basis-2/5 md:basis-1/4 lg:basis-[inherit]">
+            <h3 class="text-md mb-2 font-medium text-holy lg:text-sm">
+              Company
+            </h3>
+            <ul class="flex flex-col gap-y-1 lg:gap-y-2">
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Terms
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Cookie Policy
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Privacy Policy
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                License
+              </li>
+            </ul>
+          </div>
+          <div class="cols-footer basis-2/5 md:basis-1/4 lg:basis-0">
+            <div class="social-media flex items-center gap-x-3">
+              <i
+                class="bx bxl-twitter icon cursor-pointer text-xl text-holy-blur lg:text-lg"
+              ></i>
+              <i
+                class="bx bxl-linkedin icon cursor-pointer text-xl text-holy-blur lg:text-lg"
+              ></i>
+              <i
+                class="bx bxl-github icon cursor-pointer text-xl text-holy-blur lg:text-lg"
+              ></i>
+              <i
+                class="bx bxl-youtube icon cursor-pointer text-xl text-holy-blur lg:text-lg"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="copyrights absolute bottom-3 right-1/2 w-full translate-x-1/2 text-center"
+      >
+        <p class="text-[.6rem] text-slate-500">
+          © 2022 Created By <a href="#">ioTm Mentor</a> All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- swiperjs -->
+    <script src="./public/js/swiper-bundle.min.js"></script>
+    <!-- vanilla js -->
+    <script src="./public/js/main.js"></script>
+  </body>
+</html>

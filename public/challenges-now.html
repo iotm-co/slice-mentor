@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- css swiperjs -->
+    <link rel="stylesheet" href="../public/css/swiper-bundle.min.css" />
+    <!-- css native -->
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="icon" href="../public/images/logo.svg" />
+    <title>ioTm Mentor | Do it</title>
+  </head>
+  <body class="bg-slate-50 font-sans">
+    <!-- header -->
+    <header
+      id="header"
+      class="fixed z-[999] w-full bg-transparent py-2 transition-all duration-200 ease-in-out md:py-5 lg:py-5"
+    >
+      <div class="container mx-auto">
+        <div class="navbar">
+          <a href="../index.html" class="logo cursor-pointer">
+            <i class="bx bx-cube-alt icon text-3xl text-dark-scy"></i>
+          </a>
+          <nav id="navigation" class="navigation" data-visible="false">
+            <ul class="menu">
+              <li>
+                <a class="nav-link" href="./challenges.html">Challenges</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./resources.html">Resources</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./teams.html">Teams</a>
+              </li>
+              <li class="relative max-w-max">
+                <div
+                  class="badge absolute -top-3 -right-5 rounded-full bg-primary px-3 py-[.15rem] text-center text-[10px] font-medium uppercase text-white"
+                >
+                  PRO
+                </div>
+                <a class="nav-link" href="./unlock.html">Unlock</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./templates.html">Free Templates</a>
+              </li>
+              <a
+                href="./login.html"
+                type="submit"
+                class="btn-navigation text-center lg:px-8"
+              >
+                Login
+              </a>
+            </ul>
+          </nav>
+          <div
+            class="menu-hamburger cursor-pointer md:hidden"
+            aria-expanded="false"
+            aria-controls="navigation"
+          >
+            <i class="bx bx-menu-alt-right icon text-3xl text-dark"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- card preview -->
+    <section class="card-preview pt-20 pb-20 lg:pt-28">
+      <div class="container mx-auto">
+        <div
+          class="rows-preview flex flex-wrap justify-center gap-y-5 md:gap-y-7 lg:justify-between xl:flex-nowrap"
+        >
+          <div class="cols-preview lg:basis-1/2">
+            <div
+              class="swiper card-cube max-w-[22rem] md:max-w-xl lg:max-w-lg xl:max-w-xl"
+            >
+              <div class="swiper-wrapper h-full">
+                <div class="swiper-slide">
+                  <img
+                    src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/qkpgcsmter7tah2sjdij.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/xihpurhitfpt5mycko8z.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/jxvqmmhh6qfcoeoxmfie.jpg"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div
+              class="info-breakpoint mt-5 flex flex-nowrap justify-between md:justify-center md:gap-x-5"
+            >
+              <div
+                class="flex items-center gap-x-1 rounded-full bg-dark-scy py-1 px-3 md:px-4 lg:px-5"
+              >
+                <h3 class="text-[.7rem] text-holy-blur lg:text-xs">
+                  Desktop Design
+                </h3>
+                <i class="bx bx-check icon text-sm text-green-500"></i>
+              </div>
+              <div
+                class="flex items-center gap-x-1 rounded-full bg-dark-scy py-1 px-3 md:px-4 lg:px-5"
+              >
+                <h3 class="text-[.7rem] text-holy-blur lg:text-xs">
+                  Active States
+                </h3>
+                <i class="bx bx-check icon text-sm text-green-500"></i>
+              </div>
+              <div
+                class="flex items-center gap-x-1 rounded-full bg-dark-scy py-1 px-3 md:px-4 lg:px-5"
+              >
+                <h3 class="text-[.7rem] text-holy-blur lg:text-xs">
+                  Mobile Design
+                </h3>
+                <i class="bx bx-check icon text-sm text-green-500"></i>
+              </div>
+            </div>
+          </div>
+          <div class="cols-preview basis-full lg:basis-[45%]">
+            <div class="content-preview">
+              <div class="info-language my-3 flex gap-x-4 md:gap-x-6">
+                <span
+                  class="sale block rounded-full bg-info py-[.3rem] px-4 text-center text-xs font-semibold uppercase text-white"
+                  >Free</span
+                >
+                <div class="language flex items-center gap-x-3">
+                  <span class="text-base font-medium text-danger">HTML</span>
+                  <span class="text-base font-medium text-info">CSS</span>
+                  <span class="text-base font-medium text-warning">JS</span>
+                </div>
+                <div
+                  class="mode ml-auto flex items-center rounded-sm border border-warning text-slate-50 md:ml-0 lg:ml-auto"
+                >
+                  <span
+                    class="bg-warning px-[.6rem] py-[.25rem] text-xs font-semibold text-holy"
+                    >3</span
+                  >
+                  <span class="px-2 text-xs font-bold uppercase text-warning">
+                    Intermediate
+                  </span>
+                </div>
+              </div>
+            </div>
+            <h2
+              class="title mt-5 font-serif font-semibold text-dark lg:text-2xl"
+            >
+              Manage Landing Page
+            </h2>
+            <p class="mt-3 mb-5 text-sm text-secondary">
+              Proyek galeri seni dua halaman ini akan sempurna jika Anda siap
+              untuk mengerjakan project bagian ini, Ada beberapa tantangan tata
+              letak yang sangat menarik!
+            </p>
+            <div class="asset rounded-lg bg-dark-scy p-5">
+              <h3 class="mb-3 text-holy-blur">Aset yang di sediakan</h3>
+              <div class="text-asset">
+                <div class="flex items-center gap-x-2">
+                  <i class="bx bx-x icon text-lg text-danger"></i>
+                  <p class="text-[.8rem] text-slate-300">
+                    Sketch and Figma design file access -
+                    <span
+                      class="cursor-pointer text-primary underline hover:no-underline"
+                      >Unlock with PRO</span
+                    >
+                  </p>
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <i class="bx bx-check icon text-lg text-green-500"></i>
+                  <p class="text-[.8rem] text-slate-300">
+                    JPEG design files for mobile & desktop layouts
+                  </p>
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <i class="bx bx-check icon text-lg text-green-500"></i>
+                  <p class="text-[.8rem] text-slate-300">
+                    Style guide for fonts, colors, etc
+                  </p>
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <i class="bx bx-check icon text-lg text-green-500"></i>
+                  <p class="text-[.8rem] text-slate-300">
+                    Optimized image assets
+                  </p>
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <i class="bx bx-check icon text-lg text-green-500"></i>
+                  <p class="text-[.8rem] text-slate-300">
+                    README file to help you get started
+                  </p>
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <i class="bx bx-check icon text-lg text-green-500"></i>
+                  <p class="text-[.8rem] text-slate-300">
+                    HTML file with pre-written content
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="bx mt-3 flex cursor-pointer items-center gap-x-2 rounded-full bg-start px-7 py-2 font-sans text-xs font-extrabold uppercase text-holy-blur hover:opacity-90"
+            >
+              Start Challenges (FREE)
+              <i class="bx bx-dumbbell icon translate-y-[.05rem] text-sm"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- how to challenges -->
+    <section class="intro-challenges pb-5 lg:pt-12">
+      <div class="container mx-auto">
+        <h2
+          class="text-center font-serif text-lg font-semibold uppercase tracking-widest text-dark lg:text-base"
+        >
+          Challenge
+        </h2>
+        <div
+          class="rows-intro-challenges mt-12 mb-8 flex flex-wrap text-dark lg:mt-20 lg:flex-nowrap lg:gap-x-24"
+        >
+          <div class="cols-intro-challenges lg:basis-1/2">
+            <h3 class="mb-3 font-serif text-xl font-extrabold">Brief</h3>
+            <p class="mb-3 text-sm lg:text-base">
+              Your challenge is to build out this bar chart component and get it
+              looking as close to the design as possible.
+            </p>
+            <p class="mb-3 text-sm lg:text-base">
+              You can use any tools you like to help you complete the challenge.
+              So if you've got something you'd like to practice, feel free to
+              give it a go.
+            </p>
+            <p class="mb-3 text-sm lg:text-base">
+              We provide the data for the chart in a local
+              <span class="bg-slate-200 px-1">data.json</span> file. So you can
+              use that to add the bars dynamically if you choose.
+            </p>
+            <p class="mb-3 text-sm lg:text-base">
+              Your users should be able to :
+            </p>
+            <ul class="mb-3 list-disc pl-5">
+              <li class="text-sm lg:text-base">
+                View the bar chart and hover over the individual bars to see the
+                correct amounts for each day
+              </li>
+              <li class="text-sm lg:text-base">
+                See the current day's bar highlighted in a different colour to
+                the other bars
+              </li>
+              <li class="text-sm lg:text-base">
+                View the optimal layout for the content depending on their
+                device's screen size
+              </li>
+              <li class="text-sm lg:text-base">
+                See hover states for all interactive elements on the page
+              </li>
+              <li class="text-sm lg:text-base">
+                <span class="text-sm font-extrabold lg:text-base">Bonus :</span>
+                See dynamically generated bars based on the data provided in the
+                local JSON file
+              </li>
+            </ul>
+            <p class="mb-3 text-sm lg:text-base">
+              Download the project and go through the
+              <span class="bg-slate-200 px-1">README.md</span> file. This will
+              provide further details about the project and help you set it up.
+            </p>
+            <p class="mb-3 text-sm lg:text-base">
+              Want some support on the challenge?
+              <a class="underline hover:no-underline" href="#"
+                >Join our JfeStudio community</a
+              >
+              and ask questions in the help channel.
+            </p>
+          </div>
+          <div class="cols-intro-challenges lg:basis-1/2">
+            <h3 class="my-6 mb-3 font-serif text-xl font-extrabold lg:mt-0">
+              Getting started
+            </h3>
+            <ul class="list-decimal pl-5">
+              <li class="text-sm lg:text-base">Download the starter code</li>
+              <li class="text-sm lg:text-base">
+                Set up the project with version control (e.g. Git)
+              </li>
+              <li class="text-sm lg:text-base">
+                Read the <span class="bg-slate-200 px-1">README.md</span> file
+                and have a look around the project
+              </li>
+              <li class="text-sm lg:text-base">
+                Get colors, fonts etc from the
+                <span class="bg-slate-200 px-1">style-guide.md</span> file
+              </li>
+              <li class="text-sm lg:text-base">
+                Set up your project/file architecture however you want
+              </li>
+              <li class="text-sm lg:text-base">Start coding!</li>
+            </ul>
+            <h3 class="mt-6 mb-3 font-serif text-xl font-extrabold">
+              Ideas to test yourself
+            </h3>
+            <ul class="list-disc pl-5">
+              <li class="text-sm lg:text-base">
+                Write your styles using a pre-processor, such as
+                <a class="underline hover:no-underline" href="#">Sass</a>,
+                <a class="underline hover:no-underline" href="#">Less</a> or
+                <a class="underline hover:no-underline" href="#">Stylus</a>
+              </li>
+              <li class="text-sm lg:text-base">
+                Train your eye for detail by getting your solution as close to
+                the design as you can
+              </li>
+              <li class="text-sm lg:text-base">
+                Use a JavaScript framework/library to practice building using
+                components
+              </li>
+              <li class="text-sm lg:text-base">
+                Try estimating the time it will take for you to build the
+                project. Then see if the time taken matches up to your estimate.
+                Project estimations are a skill that is often overlooked but is
+                essential for professional developers
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="bx mt-3 flex cursor-pointer items-center gap-x-2 rounded-full bg-start px-7 py-2 font-sans text-xs font-extrabold uppercase text-holy-blur hover:opacity-90"
+        >
+          Start Challenges (FREE)
+          <i class="bx bx-dumbbell icon translate-y-[.05rem] text-sm"></i>
+        </button>
+      </div>
+    </section>
+    <!-- accordion FAQS -->
+    <section class="accordion-faqs py-20">
+      <div class="container mx-auto">
+        <h3
+          class="mb-6 text-center font-serif text-base font-bold uppercase tracking-widest"
+        >
+          Challenges FAQS
+        </h3>
+        <div class="rows-accordion flex flex-col gap-y-5 md:items-center">
+          <div class="cols-accordion md:max-w-md lg:max-w-lg">
+            <div
+              class="accordion h-11 cursor-pointer overflow-hidden rounded-lg bg-holy shadow-3xl transition-all duration-300 ease-in-out"
+            >
+              <div
+                class="title-accordion flex items-center justify-between py-3 px-5"
+              >
+                <h3 class="text-[.8rem] font-bold text-dark">
+                  Can I use libraries/frameworks on these projects?
+                </h3>
+                <img
+                  class="images-plus w-4 -rotate-45 transition-transform duration-300 ease-in-out"
+                  src="./images/icon-close.svg"
+                  alt="images close"
+                />
+              </div>
+              <div class="accordion-content my-2">
+                <p class="px-5 text-xs leading-5 text-secondary">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Numquam atque deserunt natus earum quis, magnam voluptatibus
+                  ratione blanditiis ex amet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cols-accordion md:max-w-md lg:max-w-lg">
+            <div
+              class="accordion h-11 cursor-pointer overflow-hidden rounded-lg bg-holy shadow-3xl transition-all duration-300 ease-in-out"
+            >
+              <div
+                class="title-accordion flex items-center justify-between py-3 px-5"
+              >
+                <h3 class="text-[.8rem] font-bold text-dark">
+                  How can I get help if I'm stuck on a challenge?
+                </h3>
+                <img
+                  class="images-plus w-4 -rotate-45 transition-transform duration-300 ease-in-out"
+                  src="./images/icon-close.svg"
+                  alt="images close"
+                />
+              </div>
+              <div class="accordion-content my-2">
+                <p class="px-5 text-xs leading-5 text-secondary">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Numquam atque deserunt natus earum quis, magnam voluptatibus
+                  ratione blanditiis ex amet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cols-accordion md:max-w-md lg:max-w-lg">
+            <div
+              class="accordion h-11 cursor-pointer overflow-hidden rounded-lg bg-holy shadow-3xl transition-all duration-300 ease-in-out"
+            >
+              <div
+                class="title-accordion flex items-center justify-between py-3 px-5"
+              >
+                <h3 class="text-[.8rem] font-bold text-dark">
+                  Can I use these projects in my portfolio?
+                </h3>
+                <img
+                  class="images-plus w-4 -rotate-45 transition-transform duration-300 ease-in-out"
+                  src="./images/icon-close.svg"
+                  alt="images close"
+                />
+              </div>
+              <div class="accordion-content my-2">
+                <p class="px-5 text-xs leading-5 text-secondary">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Numquam atque deserunt natus earum quis, magnam voluptatibus
+                  ratione blanditiis ex amet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cols-accordion md:max-w-md lg:max-w-lg">
+            <div
+              class="accordion h-11 cursor-pointer overflow-hidden rounded-lg bg-holy shadow-3xl transition-all duration-300 ease-in-out"
+            >
+              <div
+                class="title-accordion flex items-center justify-between py-3 px-5"
+              >
+                <h3 class="text-[.8rem] font-bold text-dark">
+                  Is there an official solution I can take a look at?
+                </h3>
+                <img
+                  class="images-plus w-4 -rotate-45 transition-transform duration-300 ease-in-out"
+                  src="./images/icon-close.svg"
+                  alt="images close"
+                />
+              </div>
+              <div class="accordion-content my-2">
+                <p class="px-5 text-xs leading-5 text-secondary">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Numquam atque deserunt natus earum quis, magnam voluptatibus
+                  ratione blanditiis ex amet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cols-accordion md:max-w-md lg:max-w-lg">
+            <div
+              class="accordion h-11 cursor-pointer overflow-hidden rounded-lg bg-holy shadow-3xl transition-all duration-300 ease-in-out"
+            >
+              <div
+                class="title-accordion flex items-center justify-between py-3 px-5"
+              >
+                <h3 class="text-[.8rem] font-bold text-dark">
+                  Do I get a code review when I post my solution?
+                </h3>
+                <img
+                  class="images-plus w-4 -rotate-45 transition-transform duration-300 ease-in-out"
+                  src="./images/icon-close.svg"
+                  alt="images close"
+                />
+              </div>
+              <div class="accordion-content my-2">
+                <p class="px-5 text-xs leading-5 text-secondary">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Numquam atque deserunt natus earum quis, magnam voluptatibus
+                  ratione blanditiis ex amet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cols-accordion md:max-w-md lg:max-w-lg">
+            <div
+              class="accordion h-11 cursor-pointer overflow-hidden rounded-lg bg-holy shadow-3xl transition-all duration-300 ease-in-out"
+            >
+              <div
+                class="title-accordion flex items-center justify-between py-3 px-5"
+              >
+                <h3 class="text-[.8rem] font-bold text-dark">
+                  Do I get a code review when I post my solution?
+                </h3>
+                <img
+                  class="images-plus w-4 -rotate-45 transition-transform duration-300 ease-in-out"
+                  src="./images/icon-close.svg"
+                  alt="images close"
+                />
+              </div>
+              <div class="accordion-content my-2">
+                <p class="px-5 text-xs leading-5 text-secondary">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Numquam atque deserunt natus earum quis, magnam voluptatibus
+                  ratione blanditiis ex amet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- join community -->
+    <section class="community lg:py-10">
+      <div
+        class="container mx-auto overflow-hidden rounded-3xl bg-dark-scy py-20 lg:py-28"
+      >
+        <div class="rows-community">
+          <div class="cols-community text-center">
+            <div
+              class="logo-brand flex items-center justify-center gap-x-2 text-holy"
+            >
+              <i class="bx bx-code icon text-4xl"></i>
+              <h1 class="title font-serif text-2xl font-bold lg:text-3xl">
+                Jfe Studio
+              </h1>
+            </div>
+            <p class="my-6 text-sm font-bold text-holy">
+              JOIN OUR JFESTUDIO COMMUNITY
+            </p>
+            <p
+              class="text-center text-sm font-medium text-holy lg:mx-auto lg:max-w-md"
+            >
+              Bergabunglah dengan lebih dari 2.570 orang yang mengambil
+              tantangan, saling mengoreksi satu sama lain, saling membantu, dan
+              membahas tentang semuanya!
+            </p>
+            <form
+              class="mt-8 flex flex-wrap gap-x-4 gap-y-2 md:flex-row md:justify-center"
+            >
+              <input
+                class="w-full rounded-md border border-graysly bg-transparent py-[0.6rem] px-4 text-holy md:basis-2/4 lg:basis-1/3"
+                type="email"
+                name="email"
+                placeholder="iotm@gmail.com"
+              />
+              <button
+                type="button"
+                class="w-full rounded-md bg-holy py-[0.7rem] text-sm font-medium uppercase italic text-dark hover:bg-slate-50 md:max-w-max md:px-6 lg:text-xs"
+              >
+                Request Invite
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- newsletter -->
+    <section class="newsletter py-20 lg:py-32">
+      <div class="container mx-auto">
+        <div
+          class="rows-newsletter flex flex-wrap gap-y-10 md:flex-nowrap md:items-center md:gap-x-20"
+        >
+          <div class="cols-newsletter md:basis-3/6">
+            <p class="text-base font-bold text-dark">
+              SUBSCRIBE TO OUR NEWSLETTER
+            </p>
+            <p class="mt-3 mb-4 text-sm font-medium text-dark">
+              Jangan lupa selalu baca-baca berita dari kami yang terbaru,
+              tantangan baru, solusi unggulan, dan berita terbaru ioTm Mentor
+            </p>
+            <div class="input-checkbox flex max-w-max items-center gap-x-2">
+              <input type="checkbox" name="chk" id="chk" />
+              <label
+                for="chk"
+                class="cursor-pointer text-sm font-medium text-dark"
+              >
+                I am happy for ioTm to contact me by email
+              </label>
+            </div>
+            <form class="mt-5 flex flex-wrap gap-y-2 lg:gap-x-4">
+              <input
+                class="w-full rounded-md border border-graysly bg-transparent py-[0.6rem] px-4 text-holy lg:w-7/12"
+                type="email"
+                name="email"
+                placeholder="iotm@gmail.com"
+              />
+              <button
+                type="button"
+                class="w-full rounded-md bg-primary py-[0.7rem] text-sm font-medium uppercase italic text-holy hover:bg-blue-600 lg:w-1/4"
+              >
+                SUBSCRIBE
+              </button>
+            </form>
+          </div>
+          <div class="cols-newsletter order-first md:order-none md:basis-3/6">
+            <img
+              class="hero drop-shadow-lg"
+              src="../public/images/collabs.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="relative bg-dark-scy py-20 lg:py-28">
+      <div class="container mx-auto">
+        <div class="rows-footer flex flex-wrap gap-y-14 lg:justify-between">
+          <div class="cols-footer basis-4/5 lg:basis-1/3">
+            <h3 class="font-serif text-white">ioTm Mentor</h3>
+            <p class="mt-2 text-sm text-slate-300 lg:text-xs">
+              Gain real experience of building websites and providing code
+              reviews. Build your portfolio and help others achieve their goals.
+            </p>
+          </div>
+          <div class="cols-footer basis-2/5 md:basis-1/4 lg:basis-0">
+            <h3 class="text-md mb-2 font-medium text-holy lg:text-sm">
+              Explore
+            </h3>
+            <ul class="flex flex-col gap-y-1 lg:gap-y-2">
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Challenges
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Solution
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Resources
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Unlock PRO
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Free Templates
+              </li>
+            </ul>
+          </div>
+          <div class="cols-footer basis-2/5 md:basis-1/4 lg:basis-0">
+            <h3 class="text-md mb-2 font-medium text-holy lg:text-sm">
+              Community
+            </h3>
+            <ul class="flex flex-col gap-y-1 lg:gap-y-2">
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Contact Us
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                JfeStudio
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                FAQs
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Blog
+              </li>
+            </ul>
+          </div>
+          <div class="cols-footer basis-2/5 md:basis-1/4 lg:basis-[inherit]">
+            <h3 class="text-md mb-2 font-medium text-holy lg:text-sm">
+              Company
+            </h3>
+            <ul class="flex flex-col gap-y-1 lg:gap-y-2">
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Terms
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Cookie Policy
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                Privacy Policy
+              </li>
+              <li
+                class="max-w-max cursor-pointer list-none text-sm font-normal text-slate-300 hover:text-slate-100 lg:text-xs"
+              >
+                License
+              </li>
+            </ul>
+          </div>
+          <div class="cols-footer basis-2/5 md:basis-1/4 lg:basis-0">
+            <div class="social-media flex items-center gap-x-3">
+              <i
+                class="bx bxl-twitter icon cursor-pointer text-xl text-holy-blur lg:text-lg"
+              ></i>
+              <i
+                class="bx bxl-linkedin icon cursor-pointer text-xl text-holy-blur lg:text-lg"
+              ></i>
+              <i
+                class="bx bxl-github icon cursor-pointer text-xl text-holy-blur lg:text-lg"
+              ></i>
+              <i
+                class="bx bxl-youtube icon cursor-pointer text-xl text-holy-blur lg:text-lg"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="copyrights absolute bottom-3 right-1/2 w-full translate-x-1/2 text-center"
+      >
+        <p class="text-[.6rem] text-slate-500">
+          © 2022 Created By <a href="#">ioTm Mentor</a> All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- swiperjs -->
+    <script src="../public/js/swiper-bundle.min.js"></script>
+    <!-- vanilla js -->
+    <script src="../public/js/main.js"></script>
+  </body>
+</html>

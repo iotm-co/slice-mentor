@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font google */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap");
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+.borders {
+  @apply border border-slate-800;
+}
+
+.borders-white {
+  @apply border border-white;
+}
+
+span.swiper-pagination-bullet {
+  @apply h-[.4rem] w-[.4rem];
+}
+
+/* navscrolling */
+.header-fixed {
+  @apply bg-transparent py-1;
+  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+  box-shadow: 0 1px 10px rgba(0 0 0 / 0.1);
+}
+
+/* show menu */
+#navigation[data-visible="true"] {
+  @apply top-14 opacity-100;
+  pointer-events: visible;
+}
+
+/* custom scrolbar */
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(0 0 0 / 0.15);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(125deg, #111, #333);
+  border-radius: 10px;
+}
+
+/* accordion */
+.accordion.active {
+  @apply h-32;
+}
+
+.accordion.active .title-accordion {
+  @apply border-b border-r-slate-50;
+}
+
+.accordion.active .images-plus {
+  @apply rotate-0;
+}
+
+/* setting hover buy now */
+.bg-dark-opacity-100 {
+  background-color: rgba(17, 17, 17, 0.253);
+}
+
+/* setting line features */
+.line-features {
+  @apply before:absolute before:inset-0 before:-z-10 before:rotate-3 before:rounded-md before:border-2 before:border-slate-200 before:content-[''] md:before:rotate-2 lg:before:rotate-3;
+}
+
+/* setting responsive */
+
+/* header */
+
+/* .fixed {
+  @apply ;
+} */
+
+.navbar {
+  @apply relative flex justify-between md:items-center;
+}
+
+.navigation {
+  @apply pointer-events-none absolute top-10 right-1 w-52 rounded-md bg-white/95 p-7 opacity-0 shadow-xl transition-all duration-300 ease-in-out md:pointer-events-auto md:static md:w-[inherit] md:bg-transparent md:p-0 md:opacity-100 md:shadow-none;
+}
+
+.menu {
+  @apply flex flex-col gap-y-3 md:flex-row md:items-center md:gap-x-8;
+}
+
+.nav-link {
+  @apply text-[.8rem] font-semibold uppercase md:text-[.7rem];
+}
+
+.btn-navigation {
+  @apply bg-hover mt-3 block w-full rounded-full bg-dark-scy px-7 py-[10px] text-[.8rem] font-medium uppercase text-white md:mt-0 md:w-[inherit] md:px-5 md:text-[.7rem];
+}

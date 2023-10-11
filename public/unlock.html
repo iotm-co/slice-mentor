@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- css swiperjs -->
+    <link rel="stylesheet" href="../public/css/swiper-bundle.min.css" />
+    <!-- css native -->
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="icon" href="../public/images/logo.svg" />
+    <title>ioTm Mentor | 404 error</title>
+  </head>
+  <body class="bg-slate-50 font-sans">
+    <!-- header -->
+    <header
+      id="header"
+      class="fixed z-[999] w-full bg-transparent py-2 transition-all duration-200 ease-in-out md:py-5 lg:py-5"
+    >
+      <div class="container mx-auto">
+        <div class="navbar">
+          <a href="../index.html" class="logo cursor-pointer">
+            <i class="bx bx-cube-alt icon text-3xl text-dark-scy"></i>
+          </a>
+          <nav id="navigation" class="navigation" data-visible="false">
+            <ul class="menu">
+              <li>
+                <a class="nav-link" href="./challenges.html">Challenges</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./resources.html">Resources</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./teams.html">Teams</a>
+              </li>
+              <li class="relative max-w-max">
+                <div
+                  class="badge absolute -top-3 -right-5 rounded-full bg-primary px-3 py-[.15rem] text-center text-[10px] font-medium uppercase text-white"
+                >
+                  PRO
+                </div>
+                <a class="nav-link text-primary" href="#">Unlock</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./templates.html">Free Templates</a>
+              </li>
+              <a
+                href="./login.html"
+                type="submit"
+                class="btn-navigation text-center lg:px-8"
+              >
+                Login
+              </a>
+            </ul>
+          </nav>
+          <div
+            class="menu-hamburger cursor-pointer md:hidden"
+            aria-expanded="false"
+            aria-controls="navigation"
+          >
+            <i class="bx bx-menu-alt-right icon text-3xl text-dark"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- page not found -->
+    <section class="not-found flex min-h-screen items-center justify-center">
+      <img
+        class="mx-auto mt-24 w-3/4 lg:w-1/3"
+        src="./images/not-found-ufo.svg"
+        alt="not-found"
+      />
+    </section>
+
+    <!-- swiperjs -->
+    <script src="../public/js/swiper-bundle.min.js"></script>
+    <!-- vanilla js -->
+    <script src="../public/js/main.js"></script>
+  </body>
+</html>

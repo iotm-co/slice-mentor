@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- css swiperjs -->
+    <link rel="stylesheet" href="../public/css/swiper-bundle.min.css" />
+    <!-- css native -->
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="icon" href="../public/images/logo.svg" />
+    <title>ioTm Mentor | Register</title>
+  </head>
+  <body class="flex items-center justify-center bg-slate-50 font-sans">
+    <!-- form register -->
+    <section class="form-register py-10 lg:py-4">
+      <div class="container mx-auto">
+        <div
+          class="rows-form-register lg:flex lg:scale-95 lg:items-center lg:justify-center"
+        >
+          <div class="cols-form-register lg:basis-1/2 lg:px-20">
+            <i class="bx bx-cube-alt icon text-4xl text-dark-scy"></i>
+            <h1
+              class="title mt-6 mb-3 font-serif text-3xl font-extrabold tracking-widest text-dark lg:text-2xl"
+            >
+              Sign Up
+            </h1>
+            <p class="text-base font-medium text-gray-500 lg:text-xs">
+              See your growth and get consulting support!
+            </p>
+            <div
+              class="login-with-google mt-10 flex w-full cursor-pointer items-center justify-center gap-x-3 rounded-full p-3 shadow-3xl hover:bg-white lg:gap-x-2"
+            >
+              <img class="w-7" src="./images/gmail.svg" alt="gmail" />
+              <p class="text-base font-semibold text-dark lg:text-sm">
+                Sign in with Google
+              </p>
+            </div>
+            <div
+              class="line relative my-6 w-full text-center after:absolute after:top-1/2 after:left-0 after:-z-10 after:h-[.05rem] after:w-full after:translate-y-1/2 after:bg-slate-200 after:content-['']"
+            >
+              <p
+                class="z-10 inline-block bg-slate-50 px-5 text-sm text-gray-300 lg:text-xs"
+              >
+                or Sign in with Email
+              </p>
+            </div>
+            <form class="flex flex-col gap-y-5" action="">
+              <div class="input-name flex flex-col gap-y-2">
+                <label
+                  class="text-base font-semibold text-dark lg:text-sm"
+                  for="name"
+                  >Name*</label
+                >
+                <input
+                  class="w-full rounded-full border border-slate-300 bg-slate-50 py-3 px-6 placeholder:text-sm"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="input-email flex flex-col gap-y-2">
+                <label
+                  class="text-base font-semibold text-dark lg:text-sm"
+                  for="email"
+                  >Email*</label
+                >
+                <input
+                  class="w-full rounded-full border border-slate-300 bg-slate-50 py-3 px-6 placeholder:text-sm"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="iotm_mentor@gmail.com"
+                  required
+                />
+              </div>
+              <div class="input-password flex flex-col gap-y-2">
+                <label
+                  class="text-base font-semibold text-dark lg:text-sm"
+                  for="password"
+                  >Password*</label
+                >
+                <input
+                  class="w-full rounded-full border border-slate-300 bg-slate-50 py-3 px-6 placeholder:text-sm"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Min. 8 character"
+                  required
+                />
+              </div>
+              <div class="input-checkbox flex w-full items-center gap-x-1">
+                <div class="checkbox flex items-center gap-x-1">
+                  <input
+                    class="scale-95"
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox"
+                  />
+                  <label
+                    class="text-base font-semibold text-dark lg:text-sm"
+                    for="checkbox"
+                    >I agree to the</label
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="text-base font-semibold text-primary hover:text-blue-600 lg:text-sm"
+                  >Terms & Conditions</a
+                >
+              </div>
+              <a
+                href="./login.html"
+                class="w-full rounded-full bg-primary p-3 text-center text-[1.1rem] font-semibold text-holy-blur hover:bg-blue-600 lg:text-base"
+                type="submit"
+              >
+                Sign Up
+              </a>
+              <p class="text-base text-dark lg:text-sm">
+                Already have an Account?
+                <a
+                  class="text-base font-semibold text-primary hover:text-blue-600 lg:text-sm"
+                  href="./login.html"
+                  >Sign in</a
+                >
+              </p>
+            </form>
+          </div>
+          <div class="cols-form-register lg:basis-1/2">
+            <img
+              class="hidden lg:block"
+              src="./images/hero-images-register.svg"
+              alt="hero images"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- swiperjs -->
+    <script src="../public/js/swiper-bundle.min.js"></script>
+    <!-- vanilla js -->
+    <script src="../public/js/main.js"></script>
+  </body>
+</html>
